@@ -28,8 +28,15 @@ library:
 
 executables:
   minfree:
-    main:                Main.hs
-    source-dirs:         app
+    main:                app/Main.hs
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - PFAD
+  fastMinfree:
+    main:                app/FastMinfreeApp.hs
     ghc-options:
     - -threaded
     - -rtsopts

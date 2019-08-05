@@ -9,3 +9,4 @@ extra-deps:
   commit: 130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7
   subdirs:
   - mega-repo1
+  - mega-repo2

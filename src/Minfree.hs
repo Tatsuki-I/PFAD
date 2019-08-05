@@ -3,6 +3,11 @@ module Minfree (minfree, minfree') where
 import Data.Array (Array, elems, accumArray, assocs)
 import Data.Array.ST (runSTArray, newArray, writeArray)
 
+-- |
+-- 与えられた自然数のリストに含まれない最小の自然数を求める関数
+-- 自然数は0を含む
+-- 前提条件1: 与えられたリストには順序がついていない
+-- 前提条件2: 要素は重複していない
 minfree :: [Int] -> Int
 minfree xs = head ([0..] \\ xs)
 

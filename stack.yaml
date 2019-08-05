@@ -3,5 +3,5 @@ packages:
 - .
 extra-deps:
 - array-0.5.2.0
-- git: https://github.com/waddlaw/single-repo
-  commit: 9af5f4c6cdc03deb59bba03407321490f0a2aa41
+- github: waddlaw/single-repo
+  commit: 16463931082172d6ad780034f6905e373dbc5139

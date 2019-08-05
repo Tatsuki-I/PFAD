@@ -4,7 +4,8 @@ packages:
 build:
   haddock: false
   haddock-arguments:
-    haddock-args: []
+    haddock-args:
+    - --odir=haddock
   open-haddocks: false
   haddock-internal: false
   haddock-hyperlink-source: true

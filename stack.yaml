@@ -2,7 +2,7 @@ resolver: lts-13.29
 packages:
     - .
 build:
-  haddock: false
+  haddock: true
   haddock-arguments:
     haddock-args:
     - --odir=haddock

@@ -1,0 +1,50 @@
+name:                PFAD
+version:             0.1.0.0
+github:              "Tatsuki-I/PFAD"
+license:             BSD3
+author:              "Tatsuki-I"
+maintainer:          "tatsuki.devel@gmail.com"
+copyright:           "2019 Tatsuki-I"
+
+extra-source-files:
+- README.md
+- ChangeLog.md
+
+# Metadata used when publishing your package
+# synopsis:            Short description of your package
+# category:            Development
+
+# To avoid duplicated efforts in documentation and dealing with the
+# complications of embedding Haddock markup inside cabal files, it is
+# common to point users to the README.md file.
+description:         Please see the README on GitHub at <https://github.com/Tatsuki-I/PFAD#readme>
+
+dependencies:
+- base >= 4.7 && < 5
+- array
+- single-repo
+
+library:
+  source-dirs: src
+
+executables:
+  PFAD-exe:
+    main:                Main.hs
+    source-dirs:         app
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - PFAD
+
+tests:
+  PFAD-test:
+    main:                Spec.hs
+    source-dirs:         test
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - PFAD

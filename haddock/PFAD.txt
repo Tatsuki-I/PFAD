@@ -17,4 +17,6 @@ module Minfree
 --   
 --   前提条件2: 要素は重複していない
 minfree :: [Int] -> Int
+
+-- | 最終的な minfree
 minfree' :: [Int] -> Int

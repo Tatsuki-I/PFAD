@@ -25,6 +25,38 @@ packages:
       sha256: 97db44027fa3423d80381ea5c0f3ca821f6abab9994b46234825be6433006ef8
   original:
     url: https://github.com/waddlaw/single-repo/archive/16463931082172d6ad780034f6905e373dbc5139.tar.gz
+- completed:
+    size: 1986
+    subdir: mega-repo1
+    url: https://github.com/waddlaw/mega-repo/archive/130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7.tar.gz
+    cabal-file:
+      size: 941
+      sha256: 97c47647c75e3baf8b00712539dced959c116ab716966b7a80bba01504fbe846
+    name: mega-repo1
+    version: 0.1.0.0
+    sha256: 7959d421b191a91076aa65ea1776d48e6834eb1bfc235f70d9dffe95862ba660
+    pantry-tree:
+      size: 261
+      sha256: d94763af1eed118ee8f0fc3f18d365539c25726b57c82078956dffa87ba10ce9
+  original:
+    subdir: mega-repo1
+    url: https://github.com/waddlaw/mega-repo/archive/130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7.tar.gz
+- completed:
+    size: 1986
+    subdir: mega-repo2
+    url: https://github.com/waddlaw/mega-repo/archive/130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7.tar.gz
+    cabal-file:
+      size: 941
+      sha256: 82bc87325f1380f7b1193cffcb9918e30691c352e434aca4dd21633054f7ee3c
+    name: mega-repo2
+    version: 0.1.0.0
+    sha256: 7959d421b191a91076aa65ea1776d48e6834eb1bfc235f70d9dffe95862ba660
+    pantry-tree:
+      size: 261
+      sha256: 0ef7f8404712c3e553652eec11ffbbddb036f5fab18dfddb408d99d4571aca70
+  original:
+    subdir: mega-repo2
+    url: https://github.com/waddlaw/mega-repo/archive/130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7.tar.gz
 snapshots:
 - completed:
     size: 500539

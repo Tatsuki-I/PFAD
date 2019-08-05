@@ -3,28 +3,7 @@
 # For more information, please see the documentation at:
 #   https://docs.haskellstack.org/en/stable/lock_files
 
-packages:
-- completed:
-    hackage: array-0.5.2.0@sha256:6fa61679e1c9809af25111bfe952afe3f7cd209d1af13f8ff07ef8abc7e737c7,1778
-    pantry-tree:
-      size: 1135
-      sha256: 86d88dd49c4247ddf3d2fd1221ff446d3aa1f720f56831c0c83996e5a464fe8c
-  original:
-    hackage: array-0.5.2.0
-- completed:
-    size: 1790
-    url: https://github.com/waddlaw/single-repo/archive/16463931082172d6ad780034f6905e373dbc5139.tar.gz
-    cabal-file:
-      size: 942
-      sha256: a2210e740dc29813a055c23552b47d8639f81fd552c8eebbc26ab004c08112e5
-    name: single-repo
-    version: 0.1.0.0
-    sha256: e3d8553a6246ccc8e59dd5fe926519318386af55a70a6777c89dd58f86a996d1
-    pantry-tree:
-      size: 302
-      sha256: 97db44027fa3423d80381ea5c0f3ca821f6abab9994b46234825be6433006ef8
-  original:
-    url: https://github.com/waddlaw/single-repo/archive/16463931082172d6ad780034f6905e373dbc5139.tar.gz
+packages: []
 snapshots:
 - completed:
     size: 500539

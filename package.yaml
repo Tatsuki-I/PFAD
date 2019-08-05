@@ -27,7 +27,7 @@ library:
   source-dirs: src
 
 executables:
-  PFAD-exe:
+  minfree:
     main:                Main.hs
     source-dirs:         app
     ghc-options:

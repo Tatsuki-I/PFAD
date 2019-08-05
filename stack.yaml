@@ -1,12 +1,10 @@
 resolver: lts-13.29
 packages:
-- .
-extra-deps:
-- array-0.5.2.0
-- github: waddlaw/single-repo
-  commit: 16463931082172d6ad780034f6905e373dbc5139
-- github: waddlaw/mega-repo
-  commit: 130b4a853a6cdd1e2f2090b9a9a755ce30ee50d7
-  subdirs:
-  - mega-repo1
-  - mega-repo2
+    - .
+build:
+  haddock: false
+  haddock-arguments:
+    haddock-args: []
+  open-haddocks: false
+  haddock-internal: false
+  haddock-hyperlink-source: true

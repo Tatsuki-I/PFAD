@@ -11,10 +11,19 @@ import Data.Array.ST (runSTArray, newArray, writeArray)
 -- 前提条件1: 与えられたリストには順序がついていない
 --
 -- 前提条件2: 要素は重複していない
+--
+-- >>> minfree [8, 23, 9, 0, 12, 11, 1, 10, 13, 7, 41, 4, 14, 21, 5, 17, 3, 19, 2, 6]
+-- 15
 minfree :: [Int] -> Int
 minfree xs = head ([0..] \\ xs)
 
 -- | リスト us から vs に含まれる要素をすべて除いた残りの要素のリストを返す
+--
+-- prop> (as ++ bs) \\ cs == (as \\ cs) ++ (bs \\ cs)
+--
+-- prop> as \\ (bs ++ cs) == (as \\ bs) \\ cs
+--
+-- prop> (as \\ bs) \\ cs == (as \\ cs) \\ bs
 (\\) :: Eq a => [a] -> [a] -> [a]
 us \\ vs = filter (`notElem` vs) us
 

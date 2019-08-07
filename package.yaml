@@ -65,3 +65,19 @@ tests:
     dependencies:
     - PFAD
     - doctest
+  PFAD-tasty:
+    main: Tasty.hs
+    source-dirs: test-tasty
+    ghc-options:
+    - -threaded
+    - -rtsopts
+    - -with-rtsopts=-N
+    dependencies:
+    - PFAD
+    - tasty
+    - tasty-hunit
+    - tasty-quickcheck
+    - tasty-hspec
+    - hspec
+    - tasty-expected-failure
+    - tasty-golden

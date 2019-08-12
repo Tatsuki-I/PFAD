@@ -81,3 +81,15 @@ tests:
     - hspec
     - tasty-expected-failure
     - tasty-golden
+
+benchmarks:
+  criterion:
+    main: bench/Criterion.hs
+    dependencies:
+    - criterion
+    - PFAD
+  gauge:
+    main: bench/Gauge.hs
+    dependencies:
+    - gauge
+    - PFAD

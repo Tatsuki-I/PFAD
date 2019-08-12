@@ -6,7 +6,7 @@ import Minfree
 
 main :: IO ()
 main =
-  defaultMain
+  defaultMainWith (defaultConfig {displayMode=Condensed})
     [ bgroup "fast minfree (whnf)"
         [ bench "n=1"     $ whnf minfree' [0..1]
         , bench "n=10"    $ whnf minfree' [0..10]

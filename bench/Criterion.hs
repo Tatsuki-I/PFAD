@@ -1,9 +1,9 @@
 module Main (main) where
 
-import Criterion.Main
-import Criterion.Types
+import           Criterion.Main
+import           Criterion.Types
 
-import Minfree
+import           Minfree
 
 main :: IO ()
 main =

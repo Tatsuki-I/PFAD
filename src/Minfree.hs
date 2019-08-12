@@ -1,7 +1,7 @@
 module Minfree (minfree, minfree') where
 
-import Data.Array (Array, elems, accumArray, assocs)
-import Data.Array.ST (runSTArray, newArray, writeArray)
+import           Data.Array    (Array, accumArray, assocs, elems)
+import           Data.Array.ST (newArray, runSTArray, writeArray)
 
 -- |
 -- 与えられた自然数のリストに含まれない最小の自然数を求める関数

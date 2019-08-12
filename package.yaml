@@ -88,3 +88,8 @@ benchmarks:
     dependencies:
     - criterion
     - PFAD
+  gauge:
+    main: bench/Gauge.hs
+    dependencies:
+    - gauge
+    - PFAD

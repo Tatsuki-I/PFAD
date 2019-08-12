@@ -50,7 +50,7 @@ sort xs = concat [replicate k x | (x,k) <- assocs (countlist xs)]
 checklist' :: [Int] -> Array Int Bool
 checklist' xs = runSTArray $ do
   a <- newArray (0, n) False
-  sequence [writeArray a x True | x <- xs, x<=n]
+  sequence_ [writeArray a x True | x <- xs, x<=n]
   return a
   where n = length xs
 

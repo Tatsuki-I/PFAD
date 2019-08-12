@@ -1,4 +1,4 @@
-module Minfree (minfree, minfree') where
+module Minfree (minfree, minfree', (\\), sort, search, checklist, checklist') where
 
 import           Data.Array    (Array, accumArray, assocs, elems)
 import           Data.Array.ST (newArray, runSTArray, writeArray)

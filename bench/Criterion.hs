@@ -1,12 +1,13 @@
 module Main (main) where
 
 import Criterion.Main
+import Criterion.Types
 
 import Minfree
 
 main :: IO ()
 main =
-  defaultMain
+  defaultMainWith (defaultConfig {reportFile=Just "./report.html"})
     [ bgroup "fast minfree (whnf)"
         [ bench "n=1"     $ whnf minfree' [0..1]
         , bench "n=10"    $ whnf minfree' [0..10]

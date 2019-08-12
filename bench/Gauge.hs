@@ -1,8 +1,8 @@
 module Main (main) where
 
-import Gauge
+import           Gauge
 
-import Minfree
+import           Minfree
 
 main :: IO ()
 main =

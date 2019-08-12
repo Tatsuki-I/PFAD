@@ -1,7 +1,7 @@
 module Minfree (minfree, minfree') where
 
-import Data.Array (Array, elems, accumArray, assocs)
-import Data.Array.ST (runSTArray, newArray, writeArray)
+import           Data.Array    (Array, accumArray, assocs, elems)
+import           Data.Array.ST (newArray, runSTArray, writeArray)
 
 -- |
 -- 与えられた自然数のリストに含まれない最小の自然数を求める関数
@@ -50,7 +50,7 @@ sort xs = concat [replicate k x | (x,k) <- assocs (countlist xs)]
 checklist' :: [Int] -> Array Int Bool
 checklist' xs = runSTArray $ do
   a <- newArray (0, n) False
-  sequence [writeArray a x True | x <- xs, x<=n]
+  sequence_ [writeArray a x True | x <- xs, x<=n]
   return a
   where n = length xs
 

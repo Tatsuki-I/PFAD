@@ -1,7 +1,7 @@
 module Main (main) where
 
-import System.Environment (getArgs)
-import Minfree (minfree)
+import           Minfree            (minfree)
+import           System.Environment (getArgs)
 
 main :: IO ()
 main =  do

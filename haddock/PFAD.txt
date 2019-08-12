@@ -25,3 +25,6 @@ minfree :: [Int] -> Int
 
 -- | 最終的な minfree
 minfree' :: [Int] -> Int
+
+module MinfreeScript
+main :: IO ()

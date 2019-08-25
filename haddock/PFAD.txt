@@ -53,3 +53,11 @@ checklist' :: [Int] -> Array Int Bool
 
 module MinfreeScript
 main :: IO ()
+search :: Array Int Bool -> Int
+checklist :: [Int] -> Array Int Bool
+countlist :: [Int] -> Array Int Int
+sort :: [Int] -> [Int]
+checklist' :: [Int] -> Array Int Bool
+partition :: (Int -> Bool) -> [Int] -> ([Int], [Int])
+minfree' :: [Int] -> Int
+minfrom :: Int -> (Int, [Int]) -> Int

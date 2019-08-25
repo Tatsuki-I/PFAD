@@ -1,4 +1,4 @@
-module MinfreeScript (main) where
+module MinfreeScript (main, search, checklist, countlist, sort, checklist', partition, minfree', minfrom) where
 
 import           Data.Array         (Array, accumArray, assocs, elems)
 import           Data.Array.ST      (newArray, runSTArray, writeArray)

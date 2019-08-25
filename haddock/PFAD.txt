@@ -26,5 +26,30 @@ minfree :: [Int] -> Int
 -- | 最終的な minfree
 minfree' :: [Int] -> Int
 
+-- | リスト us から vs に含まれる要素をすべて除いた残りの要素のリストを返す
+--   
+--   <pre>
+--   (as ++ bs) \\ cs == (as \\ cs) ++ (bs \\ cs)
+--   </pre>
+--   
+--   <pre>
+--   as \\ (bs ++ cs) == (as \\ bs) \\ cs
+--   </pre>
+--   
+--   <pre>
+--   (as \\ bs) \\ cs == (as \\ cs) \\ bs
+--   </pre>
+(\\) :: Eq a => [a] -> [a] -> [a]
+sort :: [Int] -> [Int]
+
+-- | 引数として論理値の配列を取る 論理値のリストに変換して True エントリーからなる最長先頭部分列の長さを返す
+search :: Array Int Bool -> Int
+
+-- | リストから配列への変換
+checklist :: [Int] -> Array Int Bool
+
+-- | Data.Array.ST モジュールを使った checklist
+checklist' :: [Int] -> Array Int Bool
+
 module MinfreeScript
 main :: IO ()

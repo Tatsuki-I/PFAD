@@ -52,9 +52,9 @@ test_failure = expectFail $ testGroup "Unit tests"
   ]
 
 test_goldenFile :: TestTree
-test_goldenFile = goldenVsFile "goldenVsFile" "./test-tasty/golden" "./test-tasty/output" $
+test_goldenFile = expectFail $ goldenVsFile "goldenVsFile" "./test-tasty/golden" "./test-tasty/output" $
   writeFile "./test-tasty/output" "aaa"
 
 test_goldenFileDiff :: TestTree
-test_goldenFileDiff = goldenVsFileDiff "goldenVsFileDiff" (\ref new -> ["diff", "-u", ref, new]) "./test-tasty/golden" "./test-tasty/outputDiff" $
+test_goldenFileDiff = expectFail $ goldenVsFileDiff "goldenVsFileDiff" (\ref new -> ["diff", "-u", ref, new]) "./test-tasty/golden" "./test-tasty/outputDiff" $
   writeFile "./test-tasty/outputDiff" "aaa"
